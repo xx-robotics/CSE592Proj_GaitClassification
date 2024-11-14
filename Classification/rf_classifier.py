@@ -64,6 +64,8 @@ ax.set_title('Confusion Matrix for RF classifier', fontsize=15)
 ax.set_xlabel('Target labels', fontsize=14)
 ax.set_ylabel('Predicted labels', fontsize=14)
 
+plt.show()
+
 # Saving the model
 filename = 'rf_classifier.sav'
 pickle.dump(grid_result, open(filename, 'wb'))
