@@ -59,7 +59,7 @@ df_cm = pd.DataFrame(conf_matrix, index = ['CA', 'HSP', 'PD', 'HC'],
                   columns = ['CA', 'HSP', 'PD', 'HC'])
 ax = plt.axes()
 sns.heatmap(df_cm, cmap='BuPu', linewidths = 2, square=False, annot=True)
-ax.set_title('Confusion Matrix for ANN classifier', fontsize=15)
+ax.set_title('Confusion Matrix for SVM classifier', fontsize=15)
 ax.set_xlabel('Target labels', fontsize=14)
 ax.set_ylabel('Predicted labels', fontsize=14)
 
